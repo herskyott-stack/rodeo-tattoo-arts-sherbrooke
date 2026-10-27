@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rodeo Tattoo Arts &amp; Infernum — Sherbrooke, QC | Tatouage personnalisé et perçage</title>
+<meta name="description" content="Rodeo Tattoo Arts &amp; Infernum, 3025 rue King Ouest suite 89, Sherbrooke QC : tatouage personnalisé et perçage dans un décor de cabinet de curiosités. (819) 640-4795.">
+<style>
+:root{--acc:#b07d2b;--acctx:#171310;--ink:#ece5d8;--bg:#171310}
+*{box-sizing:border-box}body{margin:0;font-family:'Courier New',monospace;background:var(--bg);color:var(--ink);line-height:1.55}
+.band{padding:2.2rem 1rem;text-align:center}
+.band.alt{background:#221c15}
+h1{font-family:Georgia,serif;font-size:2.9rem;margin:.3rem 0;letter-spacing:.08em;text-transform:uppercase;color:#d9a441}
+h2{font-family:Georgia,serif;text-transform:uppercase;letter-spacing:.1em;color:#d9a441}
+.wrap{max-width:860px;margin:0 auto;padding:0 1rem}
+.cta{display:inline-block;background:#b07d2b;color:#171310;padding:.8rem 1.5rem;text-decoration:none;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.artists{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;text-align:left}
+.artists div{border:1px solid #b07d2b66;padding:1rem}
+.foot{text-align:center;padding:1.2rem;font-size:.85rem;opacity:.7}
+.cform{margin:0 auto;text-align:left}
+.cform input,.cform select,.cform textarea{background:#221c15;color:#ece5d8;border-color:#555}
+
+.cform{display:grid;gap:.7rem;max-width:520px}
+.cform label{display:grid;gap:.3rem;font-size:.92rem;font-weight:600}
+.cform input,.cform select,.cform textarea{padding:.6rem .7rem;border:1px solid #0003;border-radius:8px;font:inherit;background:#fff;color:#111}
+.cform button{padding:.75rem 1rem;border:0;border-radius:8px;font:inherit;font-weight:700;cursor:pointer;background:var(--acc);color:var(--acctx,#fff)}
+.fnote{font-size:.85rem;opacity:.8}
+.fdone{font-weight:700}
+a{color:var(--acc)}
+</style>
+</head>
+<body>
+
+<div class="band">
+  <p style="letter-spacing:.3em">SHERBROOKE · QUÉBEC</p>
+  <h1>Rodeo Tattoo Arts &amp; Infernum</h1>
+  <p>Tatouage et perçage dans un décor de musée — un cabinet de curiosités où chaque pièce raconte une histoire.</p>
+  <p><a class="cta" href="tel:+18196404795">Appeler le (819) 640-4795</a></p>
+  <p>Noté 4,9★ sur 124 avis Google</p>
+</div>
+<div class="band alt">
+  <div class="wrap">
+    <h2>Nos artistes</h2>
+    <div class="artists">
+      <div><strong>The DarkestPearl</strong><p>Trash polka et projets éclatés.</p></div>
+      <div><strong>Sabrina B</strong><p>Tatouage personnalisé.</p></div>
+      <div><strong>Laurence Couture — Soft&amp;Lau Ink</strong><p>Lignes douces et pièces délicates.</p></div>
+    </div>
+    <p>Un projet en tête? Apportez vos références — on dessine du sur-mesure, jamais du copié-collé.</p>
+  </div>
+</div>
+<div class="band">
+  <div class="wrap">
+    <h2>Heures &amp; adresse</h2>
+    <p>Lundi – samedi : 9 h – 17 h · Dimanche : fermé<br>
+    3025, rue King Ouest, suite 89, Sherbrooke, QC · <a href="https://www.facebook.com/rodeotattooarts">Rodeo Tattoo sur Facebook</a></p>
+    <h2>Demande de consultation</h2>
+    
+      <form class="cform" onsubmit="event.preventDefault();var r='RTA-'+Math.floor(1000+Math.random()*9000);document.getElementById('RTAref').textContent=r;document.getElementById('RTAdone').style.display='block';this.querySelector('button').disabled=true;">
+        <label>Votre nom<input type="text" required autocomplete="name"></label>
+        <label>Téléphone<input type="tel" required autocomplete="tel"></label>
+        <label>Service<select>
+          <option>Demande de consultation tatouage</option>
+          <option>Projet personnalisé</option>
+          <option>Perçage</option>
+          <option>Question générale</option>
+        </select></label>
+        <label>Détails (facultatif)<textarea rows="3"></textarea></label>
+        <button type="submit">Envoyer la demande</button>
+        <p class="fnote">Formulaire de concept — il n'envoie et n'enregistre rien pour le moment. Pour nous joindre aujourd'hui, appelez le (819) 640-4795.</p>
+        <p class="fdone" id="RTAdone" style="display:none">Référence: <strong id="RTAref"></strong> — concept seulement; appelez pour confirmer.</p>
+      </form>
+  </div>
+</div>
+<footer class="foot"><p>Concept website designed for Rodeo Tattoo Arts & Infernum · Built by Jake Hersky — Ottawa web designer · hersky.info</p></footer>
+
+</body>
+</html>
